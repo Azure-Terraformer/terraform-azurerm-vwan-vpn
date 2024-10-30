@@ -1,12 +1,3 @@
-resource "azurerm_public_ip" "main" {
-
-  name                = "pip-vpng-${var.name}"
-  resource_group_name = var.resource_group_name
-  location            = var.location
-  allocation_method   = "Static"
-
-}
-
 resource "azurerm_point_to_site_vpn_gateway" "main" {
   name                = "vpng-${var.name}"
   resource_group_name = var.resource_group_name
