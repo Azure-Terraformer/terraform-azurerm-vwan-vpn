@@ -19,3 +19,15 @@ variable "audience" {
 variable "virtual_hub_id" {
   type = string
 }
+variable "dns_servers" {
+  type    = list(string)
+  default = null
+}
+variable "scale_unit" {
+  type    = number
+  default = 1
+}
+variable "tags" {
+  type    = map(string)
+  default = {}
+}
